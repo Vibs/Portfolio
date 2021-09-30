@@ -34,6 +34,9 @@
 /**********! MENU-SELECTER ***********/
 
 #select-wrapper {
+    position: sticky;
+    top: 15vh;
+
     height: 3em;
     padding: 1em 0 1em 0;
 }
