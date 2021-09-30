@@ -1,0 +1,28 @@
+.light-green {
+    color: rgb(166, 219, 182);
+}
+
+.green {
+    color: rgb(132, 177, 144);
+}
+
+.dark-green {
+    color: rgb(104, 148, 115);
+}
+
+
+.headline {
+    font-size: 2em;
+    font-weight: bolder;
+    padding-bottom: 0.5rem;
+}
+
+.text {
+    font-size: 1em;
+    color: black;
+}
+
+
+.icon {
+    font-size: 1.2em;
+}

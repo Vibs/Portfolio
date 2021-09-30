@@ -1,13 +1,63 @@
 
-
-.flexCenter {
+.flex-center {
     display: flex;
     justify-content: center; /*makes text horizontal*/
     align-items: center; /*makes text vertical*/
 }
 
-.flexRight {
+.flex-right {
     display: flex;
     justify-content: right; /*makes text horizontal*/
     align-items: center; /*makes text vertical*/
 }
+
+.flex-left {
+    display: flex;
+    justify-content: left; /*makes text horizontal*/
+    align-items: center; /*makes text vertical*/
+}
+
+
+
+#main-content-wrapper {
+    font-family: 'Titillium Web', sans-serif;
+
+    top: 15vh; /*height of navbar*/
+    display: flexbox; /*so the divs align vertically*/
+    height: 100%; /* TODO */
+    width: 80%;
+    margin: auto; /*centers el*/
+}
+
+
+
+/**********! MENU-SELECTER ***********/
+
+#select-wrapper {
+    height: 3em;
+    padding: 1em 0 1em 0;
+}
+
+select {
+    right: 0;
+
+    border: none;
+    border-radius: 36px ;
+    height: 4em;
+    width: 4em;
+
+    background-color: rgb(166, 219, 182);
+    font-family: 'Titillium Web', sans-serif;
+
+    /*removes default arrow*/
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /*background-image: url(...);    Add custom arrow */
+}
+
+
+select:hover {
+    background-color: rgb(132, 177, 144);
+}
+
