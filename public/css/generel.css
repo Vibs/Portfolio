@@ -1,0 +1,13 @@
+
+
+.flexCenter {
+    display: flex;
+    justify-content: center; /*makes text horizontal*/
+    align-items: center; /*makes text vertical*/
+}
+
+.flexRight {
+    display: flex;
+    justify-content: right; /*makes text horizontal*/
+    align-items: center; /*makes text vertical*/
+}

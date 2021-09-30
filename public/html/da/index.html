@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+
+
+
+<!--Fonts-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Titillium+Web:wght@200&display=swap" rel="stylesheet">
+
+<!-- to use fonts:
+font-family: 'Open Sans', sans-serif;
+font-family: 'Titillium Web', sans-serif;
+-->
+
+<!--Styling-->
+<link rel="stylesheet" type="text/css" href="../../css/navbar.css">
+<link rel="stylesheet" type="text/css" href="../../css/generel.css">
+
+<!--Scripts-->
+<script type="text/javascript" src="../../scripts/navbar.css"></script>
+
+
+<style>
+   
+    /*------------------------ SITE ------------------------*/
+
+    #mainContentWrapper {
+        top: 15vh; /*height of navbar*/
+        display: flexbox; /*so the divs align vertically*/
+        height: 100vmax; /* TODO */
+        width: 80%;
+        margin: auto; /*centers el*/
+    }
+
+    
+    #selectWrapper {
+        height: 3em;
+        padding: 1em 0 1em 0;
+    }
+    
+
+    select {
+        right: 0;
+
+        border: none;
+        border-radius: 36px ;
+        height: 4em;
+        width: 4em;
+
+        background-color: rgb(166, 219, 182);
+        font-family: 'Titillium Web', sans-serif;
+
+        /*removes default arrow*/
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        /*background-image: url(...);    Add custom arrow */
+
+    }
+
+</style>
+
+
+</head>
+<body>
+    <!----------------------------- NAVBAR ---------------------------->
+    <div id="navBar">
+        <div id="linkWrapper">
+            <a class="link flexCenter active" href="/da">Om mig</a>
+            <a class="link flexCenter" href="/da/aboutMe">Om mig</a>
+            <a class="link flexCenter" href="/da/aboutMe">Om mig</a>
+        </div>
+    </div>
+    <!-------------------------- MAIN CONTENT ---------------------------->
+    <div id="mainContentWrapper">
+    <!------------------- MENU -------------------->
+        <div id="selectWrapper" class="flexRight">
+            <select id="options" name="menu" >
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="opel">Opel</option>
+                <option value="audi">Audi</option>
+            </select>            
+        </div>
+
+        <i class="fas fa-smile-wink vibes"></i>
+        <i class="fas fa-band-aid"></i>
+
+        <div class="pictureWrapper flexCenter">
+            <img src="" alt="">
+        </div>
+    
+    </div>
+
+</body>
+</html>
