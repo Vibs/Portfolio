@@ -1,0 +1,15 @@
+.round {
+    height: 20em;
+    border-radius: 100%;
+    margin-right: 5em;
+}
+
+.fat-text {
+    font-size: 2em;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+#interchangable {
+    font-size: 3em;
+    font-family: 'Fjalla One', sans-serif;
+}

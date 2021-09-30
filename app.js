@@ -16,6 +16,13 @@ app.get("/:language", (req, res) => {
         : res.sendStatus(404);
 });
 
+app.get("/:language/courses", (req, res) => {
+    const language = req.params.language;
+    language === "da" || language === "en"
+        ? res.sendFile(__dirname + `/public/html/${language}/courses.html`)
+        : res.sendStatus(404);
+})
+
 
 
 

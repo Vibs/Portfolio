@@ -13,16 +13,20 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Titillium+Web:wght@200&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+    
     <!-- to use fonts:
     font-family: 'Open Sans', sans-serif;
     font-family: 'Titillium Web', sans-serif;
+    font-family: 'Fjalla One', sans-serif;
     -->
 
     <!--Styling-->
     <link rel="stylesheet" type="text/css" href="../../css/navbar.css">
     <link rel="stylesheet" type="text/css" href="../../css/generel.css">
     <link rel="stylesheet" type="text/css" href="../../css/text.css">
+    <link rel="stylesheet" type="text/css" href="../../css/index.css">
+
 
     <!--Scripts-->
     <script type="text/javascript" src="../../scripts/navbar.js"></script>
@@ -40,7 +44,7 @@
     </div>
     <!-------------------------- MAIN CONTENT ---------------------------->
     <div id="main-content-wrapper">
-    <!------------------- MENU -------------------->
+    <!------------------------ MENU ----------------------->
         <div id="select-wrapper" class="flex-right">
             <select id="options" name="menu" >
                 <option value="volvo">Volvo</option>
@@ -49,33 +53,39 @@
                 <option value="audi">Audi</option>
             </select>            
         </div>
-
+    <!-------------- PICTURE AND CHANGEABLE TEXT ------------->
+        <div class="content-group flex-center">
+            <img src="../../images/IMG_20210823_154045.jpg" alt="Vibe Jensen" class="round">
+            
+            <div class="center">
+                <div class="headline">Jeg hedder Vibe Jensen,</div>
+                <div class="headline">og jeg arbejder med </div>
+                <div id="interchangable">NOGET</div>
+            </div>
+          
+        </div>
+        <div class="content-group-border"></div>
+    <!----------------------- KONTAKT -------------------->
         <div class="content-group">
-            <div class="headline flex-center">Kontakt</div>
-            <div class="text flex-center">
-                <i class="fas fa-phone-alt da"></i> <!--no icon-class because it doesn't need to be bigger-->
-                &nbsp; &nbsp;
-                +45 60 19 10 36
-                <!-- EVT: <a href="tel:45-60-19-10-36">+45 60 19 10 36</a> -->
-            </div>
-            <div class="text flex-center"> 
-                <i class="far fa-envelope icon"></i>
-                &nbsp; &nbsp;
-                <a href="mailto:vibej@hotmail.com" class="text">vibej@hotmail.com</a>
-            </div>
-            <div class="text flex-center">
-                <i class="fab fa-github icon"></i>
-                &nbsp; &nbsp;
-                <a href="https://github.com/Vibs" class="text">https://github.com/Vibs</a>
-            </div>
-
+                <div class="headline flex-center">Kontakt</div>
+                <div class="text flex-center">
+                    <i class="fas fa-phone-alt da"></i> <!--no icon-class because it doesn't need to be bigger-->
+                    &nbsp; &nbsp;
+                    +45 60 19 10 36 <!-- EVT: <a href="tel:45-60-19-10-36">+45 60 19 10 36</a> -->
+                </div>
+                <div class="text flex-center"> 
+                    <i class="far fa-envelope icon"></i>
+                    &nbsp; &nbsp;
+                    <a href="mailto:vibej@hotmail.com" class="text">vibej@hotmail.com</a>
+                </div>
+                <div class="text flex-center">
+                    <i class="fab fa-github icon"></i>
+                    &nbsp; &nbsp;
+                    <a href="https://github.com/Vibs" class="text">https://github.com/Vibs</a>
+                </div>
         </div>
+        <div class="content-group-border"></div>
 
-
-
-        <div class="picture-wrapper flex-center">
-            <img src="" alt="">
-        </div>
     
     </div>
 

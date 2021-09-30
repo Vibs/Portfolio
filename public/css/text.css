@@ -1,3 +1,18 @@
+.content-group {
+    padding: 5em 0 5em 0;
+}
+
+.center {
+    text-align: center;
+}
+
+.content-group-border {
+    position: absolute;
+    border-top: 0.3em dotted rgb(104, 148, 115);
+    left: 20%;
+    right: 20%;
+}
+
 .light-green {
     color: rgb(166, 219, 182);
 }
@@ -21,7 +36,6 @@
     font-size: 1em;
     color: black;
 }
-
 
 .icon {
     font-size: 1.2em;
