@@ -8,7 +8,6 @@ app.use(express.json());
 app.use(express.static(__dirname + '/public'));
 
 
-
 app.get("/:language", (req, res) => {
     const language = req.params.language;
     language === "da" || language === "en" 

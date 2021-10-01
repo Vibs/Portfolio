@@ -1,20 +1,23 @@
+let divChangingWord = document.getElementById('changing-word');
 
-const divInterchangable = document.getElementById('interchangable');
+document.addEventListener('DOMContentLoaded', function () {
 
-const interchangableWords = ['HTML', 'CSS', 'JSON', 'JAVA', 'PYTHON'];
+});
 
-
-
+const words = ['JAVA', 'SPRING', 'HTML', 'CSS', 'JAVASCRIPT', 'NODE.JS', 'PYTHON', 'C#'];
 let index = 0;
 
 function changeText() {
-    divInterchangable.innerHTML = interchangableWords[index]
-    if (index < interchangableWords.length - 1) {
+    divChangingWord.innerHTML = words[index]
+    if (index < words.length - 1) {
         index++;
     } else {
         index = 0;
     }
 }
 
+
 setInterval(changeText, 1000);
+
+
 
