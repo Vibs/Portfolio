@@ -12,20 +12,21 @@ function createContentGroup() {
     return divContentGroup;
 }
 
-function addHeadline(text, elementToAddHeadlineTo) {
+function createHeadline(text) {
     const divHeadline = document.createElement('div');
     divHeadline.classList.add('headline', 'flex-center');
     divHeadline.innerHTML = text;
 
-    elementToAddHeadlineTo.appendChild(divHeadline);
+    return divHeadline;
 }
 
-function addText(text, elementToAddTextTo) {
+function createText(text) {
     const divText = document.createElement('div');
-    divText.classList.add('text');
+
+    divText.classList.add('text-block');
     divText.innerHTML = text;
 
-    elementToAddTextTo.appendChild(divText);
+    return divText;
 }
 
 
