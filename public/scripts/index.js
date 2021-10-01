@@ -1,7 +1,9 @@
-let divChangingWord = document.getElementById('changing-word');
+const divChangingWord = document.getElementById('changing-word');
+let mainContentWrapper;
 
 document.addEventListener('DOMContentLoaded', function () {
-
+    mainContentWrapper = document.getElementById('main-content-wrapper');
+    addTestSection();
 });
 
 const words = ['JAVA', 'SPRING', 'HTML', 'CSS', 'JAVASCRIPT', 'NODE.JS', 'PYTHON', 'C#'];
@@ -18,6 +20,18 @@ function changeText() {
 
 
 setInterval(changeText, 1000);
+
+
+
+function addTestSection() {
+
+    const contentGroup = createContentGroup();
+
+    addHeadline('TEST', contentGroup);
+
+    mainContentWrapper.insertBefore(contentGroup, document.getElementById('contact'));
+    mainContentWrapper.insertBefore(createContentGroupBorder(), document.getElementById('contact'));
+}
 
 
 
