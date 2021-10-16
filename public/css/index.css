@@ -1,15 +1,16 @@
 .round {
-    height: 20em;
+    height: 25em;
     border-radius: 100%;
-    margin-right: 5em;
+    margin-right: 10em;
 }
 
-.fat-text {
-    font-size: 2em;
-    font-family: 'Fjalla One', sans-serif;
-}
-
+/*style for changing word*/
 #changing-word {
     font-size: 3em;
     font-family: 'Fjalla One', sans-serif;
 }
+
+.icon {
+    font-size: 1.2em;
+}
+

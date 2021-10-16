@@ -30,29 +30,27 @@ function addTestSection() {
     contentGroup.appendChild(createHeadline('Vibe Helene Jensen'));
     contentGroup.appendChild(createText(
         'Hej! Jeg hedder Vibe, og jeg er datamatikerstuderende på fjerde semester. ' + 
-        'Jeg er kreativ af natur, hvilket egentlig er den største grund til, hvorfor datamatikerfaget er lige mig: <br>') 
+        'Her på siden kan du læse om nogle af de ting jeg kan <br>') 
     );
 
-    const divItalicText = createText('Her får jeg lov til at slå mig løs kreativt!<br>');
+    /* ITALIC tekst
+    const divItalicText = createText('Noget vigtigt italic tekst!<br>');
     divItalicText.classList.add('italics');
-
     contentGroup.appendChild(divItalicText);
+    */
+
 
     contentGroup.appendChild(createText(
-        'Mega spændende info omkring mig ' + 
-        'Mega spændende info omkring mig ' + 
-        'Mega spændende info omkring mig ' + 
-        'Mega spændende info omkring mig ' + 
-        'Mega spændende info omkring mig ' + 
-        'Mega spændende info omkring mig ') 
+        'Mere totallo spændende info omkring mig ' + 
+        'Mere totallo spændende info omkring mig ' + 
+        'Mere totallo spændende info omkring mig ' + 
+        'Mere totallo spændende info omkring mig ' + 
+        'Mere totallo spændende info omkring mig ' + 
+        'Mere totallo spændende info omkring mig ') 
     );
 
-
-
-  
-
     mainContentWrapper.insertBefore(contentGroup, document.getElementById('contact'));
-    mainContentWrapper.insertBefore(createContentGroupBorder(), document.getElementById('contact'));
+    mainContentWrapper.insertBefore(createLargeBorder(), document.getElementById('contact'));
 }
 
 

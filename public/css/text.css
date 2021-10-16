@@ -1,5 +1,35 @@
+
+.headline {
+    font-size: 2.5em;
+    font-weight: bolder;
+}
+
+.subheadline {
+    font-size: 2em;
+    font-weight: bolder;
+}
+
+.sub-subheadline {
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+
+.text-block {
+    font-size: 1.5em;
+    text-align: center;
+    /*
+    position: relative;
+    left: 20%;
+    width: 60%;
+    */
+}
+
+
+/*OTHER*/
+
 .content-group {
     padding: 2em 0 2em 0;
+    display: block;
 }
 
 .two-em-space {
@@ -14,12 +44,30 @@
     text-align: center;
 }
 
-.content-group-border {
-    position: absolute;
+/*! BORDERS*/
+
+.large-border {
+    position: flex; /*so it isn't visible inside nav-bar when scrolling*/
     border-top: 0.3em dotted rgb(50, 80, 58);
     left: 20%;
     right: 20%;
 }
+
+.small-border {
+    position: flex;
+    border-top: 0.3em dotted rgb(50, 80, 58);
+    left: 30%;
+    right: 30%;
+}
+
+/*
+  position: relative;
+    left: 20%;
+    width: 60%;
+*/
+
+
+/*! COLOURS*/
 
 .light-green {
     color: rgb(166, 219, 182);
@@ -34,30 +82,75 @@
 }
 
 
-.headline {
-    font-size: 2em;
-    font-weight: bolder;
-    padding-bottom: 0.5em;
-}
 
-/*
-  position: relative;
-    left: 20%;
-    width: 60%;
+
+/*! FOR LINKS*/
+
+a:link { text-decoration: none; color: black;}
+a:visited { text-decoration: none; color: black;}
+a:hover { text-decoration: none; color: black;}
+a:active { text-decoration: none; color: black;}
+
+
+
+
+/*! STYLES FOR CODE-TEXT
+https://www.cssfontstack.com/Consolas
 */
 
-.text-block {
-    position: relative;
-    text-align: center;
-    left: 20%;
-    width: 60%;
+.code-background {
+    /*same background colour as vscode*/
+    background-color: rgb(30, 30, 30);
+    padding: 20px 20px 20px 20px;
+    margin: 20px 0 20px 0;
+    border-radius: 25px;
+    width: 80%;
 }
 
-.text {
-    font-size: 1em;
-    color: black;
-}
 
-.icon {
-    font-size: 1.2em;
+.h1 { 
+    font-family: Consolas, monaco, monospace; 
+    font-size: 23px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 700; 
+    line-height: 23px; 
+} 
+.h3 { 
+    font-family: Consolas, monaco, monospace; 
+    font-size: 17px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 700; 
+    line-height: 23px; 
+} 
+    
+.p { 
+    font-family: Consolas, monaco, monospace; 
+    font-size: 14px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 400; 
+    line-height: 23px; 
+} 
+
+.blockquote { 
+    font-family: Consolas, monaco, monospace; 
+    font-size: 20px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 400; 
+    line-height: 23px;
+    /*added by me*/
+    color: rgb(86, 156, 214);
+    text-align: left;
+} 
+
+.pre { 
+    font-family: Consolas, monaco, monospace; 
+    font-size: 11px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 400; 
+    line-height: 23px; 
 }

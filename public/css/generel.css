@@ -25,7 +25,7 @@
     top: 15vh; /*height of navbar*/
     display: flexbox; /*so the divs align vertically*/
     height: 100%; /* TODO */
-    width: 80%;
+    width: 60%;
     margin: auto; /*centers el*/
 }
 

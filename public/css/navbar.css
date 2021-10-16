@@ -6,6 +6,7 @@ body {
 
 /*------------------------ NAVBAR ------------------------*/
 #nav-bar {
+
     /*A sticky element requires a threshold to be specified by setting value (other than auto) for at least one of the top, right, bottom, or left properties. This threshold value makes the sticky element act as fixed positioned when it crosses the threshold, and a relatively positioned element otherwise*/
     position: sticky;
     top: 0;
@@ -17,16 +18,18 @@ body {
 /*div to center nav-links in nav-bar*/
 #link-wrapper {
     display: flex; /*nav-elements are displayed in one line*/
+    justify-content: center;
     margin: auto; /*centers div*/
     height: 100%;
     width: 80%;
+    text-align: center;
 }
 
 /**/
 .link {
     width: 15em;
 
-    font-size: 200%;
+    font-size: 250%;
     color: black;
     text-decoration: inherit; /*no underline*/
 }
