@@ -4,12 +4,3 @@
 én kasse fylder en tredjedel side == 33% - derfor width: 23% og 5% margin på hver side
 
 */
-.subgroup {
-    width: 23%;
-    height: 6em;
-    margin-left: 5%;
-    margin-right: 5%;
-    border: solid;
-    border-radius: 36%;
-    border-color: black;
-}

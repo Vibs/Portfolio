@@ -3,14 +3,14 @@ let mainContentWrapper;
 
 document.addEventListener('DOMContentLoaded', function () {
     mainContentWrapper = document.getElementById('main-content-wrapper');
-    addTestSection();
+    addMeSection();
 });
 
-const words = ['JAVA', 'SPRING', 'HTML', 'CSS', 'JAVASCRIPT', 'NODE.JS', 'PYTHON', 'C#'];
+const words = ['Java', 'Spring', 'HTML', 'css', 'Thymeleaf', 'Javascript', 'Node.js', 'python', 'C#', 'GRASP', 'Scrum', 'UML', 'SQL', 'Git'];
 let index = 0;
 
 function changeText() {
-    divChangingWord.innerHTML = words[index]
+    divChangingWord.innerHTML = words[index].toUpperCase()
     if (index < words.length - 1) {
         index++;
     } else {
@@ -18,19 +18,19 @@ function changeText() {
     }
 }
 
-
 setInterval(changeText, 1000);
 
 
 
-function addTestSection() {
+function addMeSection() {
 
     const contentGroup = createContentGroup();
 
     contentGroup.appendChild(createHeadline('Vibe Helene Jensen'));
     contentGroup.appendChild(createText(
         'Hej! Jeg hedder Vibe, og jeg er datamatikerstuderende på fjerde semester. ' + 
-        'Her på siden kan du læse om nogle af de ting jeg kan <br>') 
+        'Her på siden kan du læse om nogle af de ting jeg har lært på studiet, og under Kursus-fanen kan du se de kurser jeg har taget.<br>' +
+        'Under Portfolio-fanen kan du også se nogle af de projekter, jeg har lavet.')
     );
 
     /* ITALIC tekst
@@ -38,16 +38,6 @@ function addTestSection() {
     divItalicText.classList.add('italics');
     contentGroup.appendChild(divItalicText);
     */
-
-
-    contentGroup.appendChild(createText(
-        'Mere totallo spændende info omkring mig ' + 
-        'Mere totallo spændende info omkring mig ' + 
-        'Mere totallo spændende info omkring mig ' + 
-        'Mere totallo spændende info omkring mig ' + 
-        'Mere totallo spændende info omkring mig ' + 
-        'Mere totallo spændende info omkring mig ') 
-    );
 
     mainContentWrapper.insertBefore(contentGroup, document.getElementById('contact'));
     mainContentWrapper.insertBefore(createLargeBorder(), document.getElementById('contact'));

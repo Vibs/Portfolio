@@ -2,11 +2,13 @@
 .headline {
     font-size: 2.5em;
     font-weight: bolder;
+    cursor: pointer;
 }
 
 .subheadline {
     font-size: 2em;
     font-weight: bolder;
+    cursor: pointer;
 }
 
 .sub-subheadline {
@@ -28,12 +30,12 @@
 /*OTHER*/
 
 .content-group {
-    padding: 2em 0 2em 0;
+    margin: 2em 0 2em 0;
     display: block;
 }
 
-.two-em-space {
-    padding-bottom: 2em;
+.standard-margin {
+    margin: 20px 0 20px 0;
 }
 
 .italics {
@@ -42,6 +44,22 @@
 
 .center {
     text-align: center;
+}
+
+.subgroup {
+    font-size: 2.5em;
+    width: 300px;
+    height: 300px;
+    margin-left: 30px;
+    margin-right: 30px;
+    border-radius: 25px;
+    border: solid;
+    border-width: 1px;
+}
+
+.subgroup:hover {
+    background-color: rgb(166, 219, 182);
+    border: none;
 }
 
 /*! BORDERS*/
@@ -70,15 +88,15 @@
 /*! COLOURS*/
 
 .light-green {
-    color: rgb(166, 219, 182);
+    background-color: rgb(166, 219, 182);
 }
 
 .green {
-    color: rgb(132, 177, 144);
+    background-color: rgb(132, 177, 144);
 }
 
 .dark-green {
-    color: rgb(104, 148, 115);
+    background-color: rgb(104, 148, 115);
 }
 
 
@@ -97,44 +115,7 @@ a:active { text-decoration: none; color: black;}
 /*! STYLES FOR CODE-TEXT
 https://www.cssfontstack.com/Consolas
 */
-
-.code-background {
-    /*same background colour as vscode*/
-    background-color: rgb(30, 30, 30);
-    padding: 20px 20px 20px 20px;
-    margin: 20px 0 20px 0;
-    border-radius: 25px;
-    width: 80%;
-}
-
-
-.h1 { 
-    font-family: Consolas, monaco, monospace; 
-    font-size: 23px; 
-    font-style: normal; 
-    font-variant: normal; 
-    font-weight: 700; 
-    line-height: 23px; 
-} 
-.h3 { 
-    font-family: Consolas, monaco, monospace; 
-    font-size: 17px; 
-    font-style: normal; 
-    font-variant: normal; 
-    font-weight: 700; 
-    line-height: 23px; 
-} 
-    
-.p { 
-    font-family: Consolas, monaco, monospace; 
-    font-size: 14px; 
-    font-style: normal; 
-    font-variant: normal; 
-    font-weight: 400; 
-    line-height: 23px; 
-} 
-
-.blockquote { 
+.code-block { 
     font-family: Consolas, monaco, monospace; 
     font-size: 20px; 
     font-style: normal; 
@@ -142,15 +123,49 @@ https://www.cssfontstack.com/Consolas
     font-weight: 400; 
     line-height: 23px;
     /*added by me*/
-    color: rgb(86, 156, 214);
     text-align: left;
+    padding: 20px 20px 20px 20px;
+    border-radius: 25px;
+    width: 80%;
 } 
 
-.pre { 
-    font-family: Consolas, monaco, monospace; 
-    font-size: 11px; 
-    font-style: normal; 
-    font-variant: normal; 
-    font-weight: 400; 
-    line-height: 23px; 
+.code-background-color {
+    background-color: rgb(30, 30, 30);
+}
+
+/*color for temrinal code snippets*/
+.code-blue-font {
+    color: rgb(86, 156, 214);
+}
+
+.code-grey-font {
+    color:rgb(75, 75, 75);
+}
+
+.terminal-background-color {
+    background-color: black;
+}
+
+/*color for temrinal code snippets*/
+.terminal-yellow-font {
+    color: rgb(255, 219, 0);
+}
+
+.terminal-white-font {
+    color: rgb(238, 238, 238);
+}
+
+.vertical {
+    display: flex; /*so elements align vertically inside this element*/
+}
+
+
+
+.bottom {
+    bottom: 0;
+}
+
+
+.rest-syntax {
+    width: 100%;
 }
